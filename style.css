@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- variables globales  ---- */
+
+:root {
+  /* colores */
+  --accente-color: #ff0000;
+  --grey--color: #909090;
+  --grey--color--alt: #ccc;
+  --boder--color: rgba(0, 0, 0, 0.1);
+
+  /* Colores de fondo*/
+  --bg-color: #fff;
+  --bg-color-alt: #f9f9f9;
+  --bg-color-active: #e5e5e5;
+
+  /* Colores de texto*/
+
+  --text-color: #030303;
+  --text-color-alt: #606060;
+  --text-color-white: #fff;
+
+  /* Texto*/
+
+  --body-font: "Roboto", sans-serif;
+  --icon-font: "iconmoon";
+
+  /* Tamaño de texto*/
+  --big-font-size: 1.125rem; /*18px*/
+  --normla-font-size: 1rem; /*16px*/
+  --small-font-size: 0.875rem; /*14px*/
+  --smaller-font-size: 0.75rem; /*12px*/
+  --font--bold: 500;
+
+  /* Otros*/
+  --header-height: 56px;
+  --z-tooltip: 25;
+  --z-fixed: 100;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+/* Estilos base*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b {
+  font-weight: var(--font-bold);
+}
+
+button {
+  font-family: var(--body-font);
+}
+
+img {
+  width: 100%;
+}
+
+/* --- Cabecera principal del sitio  ---- */
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  height: var(--header-height);
+  background: red;
+  z-index: var(--z-fixed);
+}
